@@ -1,0 +1,55 @@
+:root {
+  --default-font: 400 20px/1.8 PingFang SC, Lantinghei SC, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif,
+    WenQuanYi Micro Hei, sans-serif;
+
+  --sidebar-width: 20rem;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-rendering: optimizelegibility;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font: var(--default-font);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a[href] {
+  cursor: pointer;
+}
+
+.sidebar-resizing {
+  user-select: none;
+}
+
+.grid-cols {
+  grid-template-columns: auto auto minmax(0, 1fr);
+}
+
+.markdown-body {
+  font: var(--default-font);
+
+  ol,
+  ul {
+    list-style: initial;
+  }
+}

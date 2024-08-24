@@ -1,0 +1,29 @@
+<div class="tw-shadow tw-flex tw-justify-between tw-items-center tw-p-4 tw-h-[60px] tw-relative tw-z-10">
+  <div>
+    <a href="/#/README.md" class="site-name"></a>
+  </div>
+  <div class="tw-flex tw-gap-2 tw-items-center">
+    <!-- 顶部右则导航 -->
+    <a href="/#/docs/guide/deploy-on-github.md?sidebar=docs/guide/SIDEBAR.md">部署</a>
+    <a href="https://github.com/yuekcc/marknote-ng" target="_blank">GitHub</a>
+  </div>
+</div>
+
+<div class="tw-relative tw-z-0 tw-grid grid-cols" style="height: calc(100vh - 60px);">
+  <!-- 侧栏 -->
+  <div class="tw-h-full tw-relative tw-resize-x" style="border-right: 1px solid #ccc; width: var(--sidebar-width)">
+    <aside id="sidebar" class="sidebar-control tw-py-4 tw-h-full tw-overflow-y-auto markdown-body"></aside>
+  </div>
+  <div class="sidebar-resize-handler tw-h-full tw-w-[4px] hover:tw-bg-blue hover:tw-cursor-ew-resize"></div>
+
+  <!-- 文章 -->
+  <div class="tw-h-full tw-overflow-y-auto">
+    <article id="content" class="tw-py-4 tw-px-8 markdown-body"></article>
+    <!-- 原文连接，打印时才会显示 -->
+    <div class="tw-py-4 tw-px-8 markdown-body permalink"></div>
+  </div>
+</div>
+
+<div class="tw-fixed tw-right-6 tw-bottom-4 back-to-top">
+  <a href="javascript:;" title="回到顶部">⬆️</a>
+</div>
